@@ -1,7 +1,10 @@
 AweSamNet.JsonObfuscator
 ==============
 
-This library makes use of JSON.Net custom Contract Resolver to serialize/deserialize objects to/from obfuscated JSON.
+Makes use of JSON.Net custom Contract Resolver to serialize/deserialize objects to/from obfuscated JSON.
+
+## License
+See license details [here](/LICENSE.md).
 
 ## Usage
 
