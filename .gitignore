@@ -6,3 +6,6 @@
 /AweSamNet.JSONObfuscator/obj
 bin
 obj
+/NuGet.JsonObfuscatorPackager.sln
+/NuGet.JsonObfuscatorPackager
+*.suo
