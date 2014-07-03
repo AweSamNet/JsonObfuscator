@@ -15,3 +15,7 @@ See license details [here](/LICENSE.md).
 	//deserialize obfuscated to proper object
     ObfuscationTest deserialized = JsonConvert.DeserializeObject<ObfuscationTest>(modifiedText, new JsonSerializerSettings { ContractResolver = new ObfuscationContractResolver()});
 ```
+
+## NuGet
+
+https://www.nuget.org/packages/AweSamNet.JsonObfuscator
