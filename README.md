@@ -13,12 +13,17 @@ See license details [here](/LICENSE.md).
 
 ```c#
     //serialize an object to obfuscated JSON
-    string text = JsonConvert.SerializeObject(myObject, new JsonSerializerSettings { ContractResolver =  new ObfuscationContractResolver()});
+    string json = myObject.JsonObfuscate();
 
 	//deserialize obfuscated to proper object
-    ObfuscationTest deserialized = JsonConvert.DeserializeObject<ObfuscationTest>(modifiedText, new JsonSerializerSettings { ContractResolver = new ObfuscationContractResolver()});
+    MyClass deserialized = json.JsonDeobfuscate<MyClass>();
 ```
 
 ## NuGet
 
 https://www.nuget.org/packages/AweSamNet.JsonObfuscator
+
+### To Install
+```
+    PM> Install-Package AweSamNet.JsonObfuscator
+```

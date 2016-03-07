@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AweSamNet.JsonObfuscator</id>
+    <version>1.0.1</version>
+    <authors>saml</authors>
+    <owners>saml</owners>
+    <licenseUrl>https://github.com/AweSamNet/JsonObfuscator/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/AweSamNet/JsonObfuscator</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Makes use of JSON.Net custom Contract Resolver to serialize/deserialize objects to/from obfuscated JSON. See https://github.com/AweSamNet/JsonObfuscator for more details.</description>
+    <releaseNotes>Added static methods and extension methods for ease of use.</releaseNotes>
+    <copyright>Copyright 2014-2016</copyright>
+    <tags>JSON Obfuscate</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="6.0.0" />
+    </dependencies>
+  </metadata>
+</package>
