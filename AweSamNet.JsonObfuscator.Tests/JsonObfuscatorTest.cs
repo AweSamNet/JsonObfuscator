@@ -146,7 +146,7 @@ namespace AweSamNet.JsonObfuscator.Tests
         [Test]
         public void SerializeEnableObfuscation()
         {
-            string text = JsonConvert.SerializeObject(new ObfuscationTest(), new JsonSerializerSettings { ContractResolver =  new ObfuscationContractResolver()});
+            string text = new ObfuscationTest().JsonObfuscate();
 
             var json = JObject.Parse(text);
             Assert.AreEqual(json["a"].Value<string>(), "Should be StringProperty1");
@@ -169,7 +169,7 @@ namespace AweSamNet.JsonObfuscator.Tests
 
             var modifiedText = json.ToString();
 
-            ObfuscationTest deserialized = JsonConvert.DeserializeObject<ObfuscationTest>(modifiedText, new JsonSerializerSettings { ContractResolver = ObfuscationContractResolver.Instance});
+            ObfuscationTest deserialized = modifiedText.JsonDeobfuscate<ObfuscationTest>();
 
             Assert.AreEqual(json["a"].Value<string>(), deserialized.StringProperty1);
             Assert.AreEqual(json["b"].Value<int>(), deserialized.AnIntProperty2);
