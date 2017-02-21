@@ -16,7 +16,7 @@ namespace AweSamNet.JsonObfuscator
         }
 
         /// <summary>
-        /// Deserializes an obfuscated json string into the passed genereic type.
+        /// Deserializes an obfuscated json string into the passed generic type.
         /// </summary>
         public static T Deobfuscate<T>(string json)
         {
@@ -33,7 +33,7 @@ namespace AweSamNet.JsonObfuscator
         }
 
         /// <summary>
-        /// Deserializes an obfuscated json string into the passed genereic type.
+        /// Deserializes an obfuscated json string into the passed generic type.
         /// </summary>
         public static T JsonDeobfuscate<T>(this string json)
         {
